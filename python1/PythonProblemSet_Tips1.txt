@@ -23,3 +23,57 @@ When creating a script in python:
 - then when you run the script on the terminal you can use either python3 pythonscript.py OR ./pythonscript.py
 	!!! if you use the second option, you MUST have the #!/usr/bin/env python 3 on the first line of the script
 	!!! if you do not have the #!/usr/bin/env in the first line of the python script, you can use the python 3 pythonscript.py command 	to activate python 3 to run the script.
+
+To write a script you can either use VS code (Visual Studio Code) or you can use vi 
+
+You can create defined variables in a script or you can create a script that defines the variables when you are interacting with the command line. 
+
+
+
+EX: Making a list of defined variables and then running the script on the command line (using UNIX) to print the list of variables: 
+#!/usr/bin/env python3
+
+#Making a list of defined variables 
+
+my_name = "PaulineDiGianivittorio"
+print ("my name:", my_name)
+
+my_favorite_color = "Green"
+print ("my favorite color:", my_favorite_color)
+
+my_favorite_activity = "Reading"
+print ("my favorite activity:", my_favorite_activity)
+
+favorite_animal = "Honey Badger"
+print ("my favorite animal:", favorite_animal)
+
+#trying F"" string formatting"
+print (f"my name: {my_name}")
+
+my_favorite_color = "Green"
+print (f"my favorite color: {my_favorite_color}")
+
+
+
+EX: You can also define variables in a script but say what you want to print as those variables in the command line. 
+
+#!/usr/bin/env python3
+import sys
+
+#this is also another way to generate list where you would define the variables on the command lin
+#to do this you would use sys.argv [1] etc, here and then define the variable in the command line 
+#When completing lists in this way, it is important to write import sys in the line under the #!usr/bin/env python3
+
+name = sys.argv [1]
+print ("my name:", name)
+
+favorite_color = sys.argv [2]
+print ("my favorite color:", favorite_color)
+
+favorite_activity = sys.argv [3]
+print ("my favorite activity:", favorite_activity)
+
+favorite_animal = sys.argv [4]
+print ("my favorite animal:", favorite_animal)
+
+
