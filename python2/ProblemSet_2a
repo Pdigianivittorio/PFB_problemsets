@@ -1,0 +1,8 @@
+#!/usr/bin/env python 
+
+# assigning a value to a variable and creating an if/else statement 
+dna = 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA'
+if 'AGC' in dna: 
+    print ('Found AGC in your dna sequence')
+else: 
+    print ('Did not find AGC in your DNA sequence')
