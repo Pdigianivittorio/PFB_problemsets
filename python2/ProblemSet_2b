@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+
+#creating a if/else statement with the following conditions: 
+#Test to see if a number is positive or negative
+#print "positive" if it is positive
+#print "negative" if it is negative
+#save it and run it.
+
+count = 10
+if count < 0: 
+    print (count, "negative")
+elif count > 0:
+    print (count, "positive")
+
+# In this example, I used elif count > 0: as oppossed to else. This is becuase elif helps in specifying a value before the colon. 
+# In an instance where you have a few elif statements, you follow with else (as the last statement doesn't need to have specificity)
