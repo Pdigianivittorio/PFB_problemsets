@@ -6,3 +6,5 @@ if 'AGC' in dna:
     print ('Found AGC in your dna sequence')
 else: 
     print ('Did not find AGC in your DNA sequence')
+
+#in this script, I used else: because I didn't need to specify a count or other value (as opposed to ProblemSet_2b)
