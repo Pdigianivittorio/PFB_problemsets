@@ -1,0 +1,25 @@
+10/14/25
+
+Python 1 Problem Set 
+
+To store something as a variable: 
+	EX: age = 30
+	EX: name = "PaulineDigianivittorio" 
+	EX: favorite_color = "Green" 
+	EX: favorite_activity = "Reading" 
+	EX: favorite_animal = "Honey Badger" 
+
+
+	- you can change the name part to something more descriptive to make it easier to track. But you are just in the interpreter so this 	is suffice. 
+
+To print the contents of the variable: 
+	EX: print (name)
+
+To exit python interpreter: 
+	EX: exit () or quit () 
+
+When creating a script in python: 
+- it is highly suggested to start your script on line 1 using #!/usr/bin/env python3
+- then when you run the script on the terminal you can use either python3 pythonscript.py OR ./pythonscript.py
+	!!! if you use the second option, you MUST have the #!/usr/bin/env python 3 on the first line of the script
+	!!! if you do not have the #!/usr/bin/env in the first line of the python script, you can use the python 3 pythonscript.py command 	to activate python 3 to run the script.
