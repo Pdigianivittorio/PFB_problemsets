@@ -9,14 +9,17 @@ count = 27
 # Here, I can put a numnber after the count = and run the script using 
     # python3 ProblemSet_2c.py 
     # it will give me the results of the test when I wanted to test the number 27. 
+    # also it is probably best to use number instead of count 
 if count < 0: 
     print (count, "is negative")
     if count % 2 == 0:
         print (count, "is even")
+    # in this context you can use the % to create an argument to evaluate a number and determine if its even or not (else argument below)
     else:
         print (count, "is odd")
     if count % 3 == 0:
         print (count, "is divisible by 3")
+    # in this context you can use the % to create an argument to evaluate a number and determine if its divisible by 3 or not (else argument below)
     else:
         print (count, "is not divisible by 3")
 elif count > 0:
