@@ -14,6 +14,7 @@ print(dna_lowercase)
 
 # now, I want to count the # of a's in the DNA sequences 
 # it is easiest to redefine variables so that you can print easier, I made these variables random letters for ease, especially since I can use this script later
+#HOWEVER, YOU SHOULD ALWAYS HAVE A WELL DEFINED VARIABLE!!!!
 
 x = dna_lowercase.count('a')
 print (f"there are {dna_lowercase.count ('a')} nucleotide a's")
@@ -45,6 +46,10 @@ print (f"the GC content of the DNA sequence is {dna_GC_count/c:.2%}")
 c = len(dna_lowercase)
 dna_AT_count = (x + y)
 print (f"the AT content of the DNA sequence is {dna_AT_count/c:.2%}")
+
+# now I want to extract and print a substring from nucleotide position 100 to nucleotide position 200
+sub_dna_lowercase = dna_lowercase [99:200]
+print (f"the nucleotides from 100-200 of the DNA sequence are as follows: {dna_lowercase [99:200]}")
 
 
 

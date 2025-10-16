@@ -1,0 +1,99 @@
+List manipulation: For the next series of tasks about lists use the interpreter:
+
+# a. Create a list of 5 of your favorite things.
+>>>my_fav_list = ['green' , 'read' , 'books' , 'food' , 'paint']
+
+# b. Use the print() function to print your list.
+>>> print (my_fav_list)
+output = ['green', 'read', 'books', 'food', 'paint']
+
+# c. Use the print() function to print out the middle element.
+>>> print(my_fav_list[2])
+output = books
+
+# d. Now replace the middle element with a different item, such as your favorite song, or your favorite song bird.
+>>> my_fav_list[2] = 'robin'
+>>> print (my_fav_list)
+output = ['green', 'read', 'robin', 'food', 'paint']
+
+# f. Add a new element to the end. 
+>>> my_fav_list.append ('ketchup')
+>>> print (my_fav_list)
+output = ['green', 'read', 'robin', 'food', 'paint', 'ketchup']
+
+# g. Add a new element to the beginning
+>>> my_fav_list.insert(0,'happy')
+>>> print (my_fav_list)
+output = ['happy', 'green', 'read', 'robin', 'food', 'paint', 'ketchup']
+
+# h. Add a new element somewhere other than the beginning or the end.
+>>> my_fav_list.insert(2,'grapes')
+>>> print (my_fav_list)
+output = ['happy', 'green', 'grapes', 'read', 'robin', 'food', 'paint', 'ketchup']
+
+# i. Remove an element from the end.
+>>> my_fav_list.pop()
+output = 'ketchup'
+>>> print (my_fav_list)
+output = ['happy', 'green', 'grapes', 'read', 'robin', 'food', 'paint']
+
+# j. Remove an element from the beginning.
+>>> my_fav_list.pop(0)
+output = 'green'
+>>> print (my_fav_list)
+output = ['grapes', 'read', 'robin', 'food', 'paint']
+# in this case, I alread accidentely took away 'happy', which is why in this case it took away 'green' 
+
+# k. Remove an element from somewhere other than the beginning or the end.
+>>> my_fav_list.pop(2)
+output = 'robin'
+>>> print (my_fav_list)
+output = ['grapes', 'read', 'food', 'paint']
+
+# l. Use join to create a string. Join the elements on ', '
+>>> string_of_elements_with_fav_items = ','.join(my_fav_list)
+>>> string_of_elements_with_fav_items
+output = 'grapes,read,food,paint'
+
+
+List and copy: Using the Python Interpreter, interrogate the difference between these two way to copy a list. 
+METHOD 1 
+#a). Create a list. For example: my_list = ['a', 'bb', 'ccc']
+>>> list_a = ['a' , 'bb' , 'ccc']
+
+# b). Make a copy using the = assignment operator:  list_copy = my_list
+>>> list_copy = list_a
+
+#c). Print the original list print(my_list)
+>>> print(list_a)
+output = ['a', 'bb', 'ccc']
+
+#d). Alter the list_copy by adding a new element using append()
+>>> list_copy.append('dddd')
+
+#e).Print the original list again print(my_list)
+>>> print(list_a)
+output = ['a', 'bb', 'ccc', 'dddd']
+    #the ouput is the same as the list_copy because a few steps ago we made list_copy = list_a
+
+METHOD 2 
+# f). Create a list. For example: my_list2 = ['a', 'bb', 'ccc']
+>>> list_b = ['a' , 'bb' , 'ccc']
+
+# g). Make a copy with the copy() method list_copy2 = my_list2.copy()
+>>> list_copy_a = list_b.copy()
+
+#h). Print the original list print(my_list2)
+>>> print(list_b)
+output = ['a', 'bb', 'ccc']
+
+# i). Alter the list_copy2 by adding a new element using append()
+>>> list_copy_a.append('dddd')
+
+#j). Print the original list again print(my_list2)
+>>> print(list_b)
+output = ['a', 'bb', 'ccc']
+    # here, the 'dddd' did not come up becuase I properly used the .copy function list.copy(). Here, you are not redefiing the original and primary list, but you are efficiently copying it
+
+
+
