@@ -6,8 +6,12 @@ import re
 poetry_file_obj = open("Python_07_nobody.txt" , "r")
 for line in poetry_file_obj: 
     print(line)
+    # I chose to print line so that I can follow easier 
     found = re.findall(r"Nobody" ,line)
     print(f"this line has: {found}")
+    # This is to find in each line if there is "Nobody"
+
+    #the below for loop, is to find the start and end position of Nobody in each line 
     for match in re.finditer(r"Nobody", line):
         whole = match.group (0)
         whole_start = match.start(0) + 1
