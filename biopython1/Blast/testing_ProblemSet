@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+
+def gc_content(seq):
+    valid = {'A', 'C', 'G', 'T'}
+    if not set(seq).issubset(valid):
+        raise ValueError("Invalid characters in sequence")
+    if len(seq) == 0:
+        return 0
+    return (seq.count('G') + seq.count('C')) / len(seq)
